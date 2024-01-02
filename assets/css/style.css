@@ -298,7 +298,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .section-title .sub-title.color-3 {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .section-title .sub-title.white {
@@ -621,14 +621,14 @@ textarea:-ms-input-placeholder {
   line-height: 48px;
   font-size: 18px;
   padding: 0 45px;
-  background: #11ddf5;
+  background: #086ad8;
   box-shadow: 11px 10px 38px 0 rgba(46, 63, 99, 0.15);
   color: #ffffff;
 }
 
 .btn-4:hover {
   background: #ffffff;
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .btn-round {
@@ -1611,7 +1611,7 @@ textarea:-ms-input-placeholder {
 
 .header-top-wrapper .header-top-info ul li i {
   font-size: 20px;
-  color: #11ddf5;
+  color: #086ad8;
   position: relative;
   top: 1px;
   margin-right: 7px;
@@ -1640,7 +1640,7 @@ textarea:-ms-input-placeholder {
 
 .header-top-wrapper .header-social span {
   font-size: 14px;
-  color: #11ddf5;
+  color: #086ad8;
   display: inline-block;
   margin-right: 20px;
 }
@@ -1660,7 +1660,7 @@ textarea:-ms-input-placeholder {
 }
 
 .header-top-wrapper .header-social ul li a:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-menu {
@@ -1668,11 +1668,11 @@ textarea:-ms-input-placeholder {
 }
 
 .header-section-06 .header-menu .main-menu > li.active-menu > a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-menu .main-menu > li.active-menu > .menu-icon::after {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-menu .main-menu > li .menu-icon::after {
@@ -1680,31 +1680,31 @@ textarea:-ms-input-placeholder {
 }
 
 .header-section-06 .header-menu .main-menu > li:hover > .menu-icon::after {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-menu .main-menu > li:hover > a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-menu .main-menu > li .sub-menu {
-  border-top: 3px solid #11ddf5;
+  border-top: 3px solid #086ad8;
 }
 
 .header-section-06 .header-menu .main-menu > li .sub-menu li.active > a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-menu .main-menu > li .sub-menu li:hover > a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-cart .cart-btn:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .header-cart .cart-btn .count {
-  background: #11ddf5;
+  background: #086ad8;
   color: #ffffff;
 }
 
@@ -1717,7 +1717,7 @@ textarea:-ms-input-placeholder {
 }
 
 .header-section-06 .header-search .search-btn:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .header-section-06 .dropdown-cart .cart-items .single-cart-item .item-content .quantity {
@@ -1744,7 +1744,7 @@ textarea:-ms-input-placeholder {
   padding-left: 15px;
 }
 
-.header-section-06 .header-meta::before {
+/* .header-section-06 .header-meta::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1753,7 +1753,7 @@ textarea:-ms-input-placeholder {
   background: #cfcfcf;
   width: 1px;
   height: 25px;
-}
+} */
 
 .header-section-06 .header-btn .btn {
   height: 50px;
@@ -2721,7 +2721,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-hero-section-06 .hero-content .title span {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .techwix-hero-section-06 .hero-content p {
@@ -3390,7 +3390,7 @@ textarea:-ms-input-placeholder {
 }
 
 .service-item-05 .service-content .title:hover a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .service-item-05 .service-content p {
@@ -3404,7 +3404,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-service-section-07 {
-  padding-bottom: 280px;
+  padding-bottom: 90px;
 }
 
 .techwix-service-section-07 .section-title {
@@ -3422,7 +3422,7 @@ textarea:-ms-input-placeholder {
 
 .techwix-service-section-07 .experience-wrap .shape-1 {
   position: absolute;
-  left: 102px;
+  /* left: 102px; */
   top: -28px;
   -webkit-animation: round-01 5s linear infinite;
           animation: round-01 5s linear infinite;
@@ -3484,7 +3484,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-service-section-07 .service-content .service-list ul li .service-icon {
-  color: #11ddf5;
+  color: #086ad8;
   margin-right: 8px;
 }
 
@@ -3879,7 +3879,7 @@ textarea:-ms-input-placeholder {
   line-height: 26px;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .techwix-cta-section-04 .cta-right .counter-item p {
@@ -4855,7 +4855,7 @@ textarea:-ms-input-placeholder {
   text-align: center;
   border-radius: 50%;
   border: 7px solid #ffffff;
-  background: #11ddf5;
+  background: #086ad8;
   color: #ffffff;
 }
 
@@ -4911,7 +4911,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .techwix-about-section-06 .about-content-wrap .about-list-wrap .about-list li a:hover i {
@@ -7273,7 +7273,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-features-section-02 .features-item .features-content .title:hover a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .techwix-features-section-02 .features-item .features-content p {
@@ -7287,7 +7287,7 @@ textarea:-ms-input-placeholder {
   font-size: 14px;
   line-height: 30px;
   font-weight: 600;
-  color: #11ddf5;
+  color: #086ad8;
   margin-top: 5px;
 }
 
@@ -9010,11 +9010,11 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-section-05 .footer-social .social li a {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .footer-section-05 .footer-social .social li a:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .footer-section-05 .widget-link {
@@ -9022,15 +9022,15 @@ textarea:-ms-input-placeholder {
 }
 
 .footer-section-05 .widget-link .link li a:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .footer-section-05 .widget-info ul li .info-icon i {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 .footer-section-05 .widget-info ul li .info-text a:hover {
-  color: #11ddf5;
+  color: #086ad8;
 }
 
 /*--
