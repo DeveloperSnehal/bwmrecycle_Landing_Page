@@ -219,7 +219,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .section-padding-02 {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -241,7 +241,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .section-padding-03 {
-  padding-top: 140px;
+  padding-top: 60px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2685,7 +2685,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-hero-section-06 .hero-images {
-  padding-top: 105px;
+  /* padding-top: 105px; */
   position: relative;
   z-index: 1;
 }
@@ -2700,7 +2700,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-hero-section-06 .hero-content {
-  padding-top: 170px;
+  padding-top: 120px;
 }
 
 .techwix-hero-section-06 .hero-content .sub-title {
@@ -3404,7 +3404,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-service-section-07 {
-  padding-bottom: 90px;
+  padding-bottom: 30px;
 }
 
 .techwix-service-section-07 .section-title {
@@ -4822,7 +4822,7 @@ textarea:-ms-input-placeholder {
 }
 
 .techwix-about-section-06 {
-  padding-bottom: 200px;
+  padding-bottom: 30px;
 }
 
 .techwix-about-section-06 .about-img {

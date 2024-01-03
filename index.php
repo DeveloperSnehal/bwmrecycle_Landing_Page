@@ -25,7 +25,7 @@
                         Recycling Solutions</h2>
                     <p data-aos="fade-up" data-aos-delay="900">Get the Best Quote for your Electronic Waste</p>
                     <div class="hero-btn" data-aos="fade-up" data-aos-delay="1000">
-                        <a class="btn btn-4" href="#">Read More</a>
+                        <a class="btn btn-4" href="#Contact">Enquire Now</a>
                     </div>
                 </div>
                 <!-- Hero Content End -->
@@ -368,7 +368,7 @@
                                 <img src="assets/images/cta-icon3.png" alt="">
                             </div>
                             <div class="hero-btn" data-aos="fade-up" data-aos-delay="1000">
-                                <a class="btn btn-4" href="#">COntact With Us</a>
+                                <a class="btn btn-4" href="#Contact">Get Quote Today</a>
                             </div>
                         </div>
                     </div>
@@ -415,7 +415,8 @@
 <!-- Cta End -->
 
 <!-- Testimonial Start  -->
-<div class="section bg-cover techwix-testimonial-section-02 techwix-testimonial-section-03 section-padding-02" id="certificate">
+<div class="section bg-cover techwix-testimonial-section-02 techwix-testimonial-section-03 section-padding-02"
+    id="certificate">
     <div class="container">
         <!-- Testimonial Wrap Start  -->
         <div class="testimonial-wrap-02">
@@ -447,9 +448,11 @@
     <!-- Brand Logo Start -->
     <div class="section techwix-brand-section techwix-brand-section-03 techwix-brand-section-04 section-padding">
         <div class="container">
+            <div class="section-title text-center">
+                <h3 class="sub-title color-3">TRUSTED BY</h3>
+            </div>
             <!-- Brand Wrapper Start -->
             <div class="brand-wrapper text-center">
-
                 <!-- Brand Active Start -->
                 <div class="brand-active">
                     <div class="swiper-container">
@@ -491,7 +494,8 @@
 
 
     <!-- Contact Start -->
-    <div class="section techwix-contact-section section-padding" style="padding-top: 120px; padding-bottom: 80px;" id="Contact">
+    <div class="section techwix-contact-section section-padding" style="padding-top: 120px; padding-bottom: 80px;"
+        id="Contact">
         <div class="container">
             <!-- Contact Wrap Start -->
             <div class="contact-wrap" style="background-image: url(assets/images/bg/);">
@@ -594,8 +598,8 @@
                         <div class="contact-form">
                             <div class="contact-form-wrap">
                                 <div class="heading-wrap text-center">
-                                    <span class="sub-title">Leave us massage</span>
-                                    <h3 class="title">How May We Help You!</h3>
+                                    <span class="sub-title">BOOK A FREE CONSULTATION</span>
+                                    <h3 class="title">Get the Best Quote for E-Waste</h3>
                                 </div>
                                 <form action="index.php" method="POST">
                                     <div class="row">
@@ -655,5 +659,61 @@
     </div>
     <!-- Contact End -->
 
+
+
+    <!--------- Mail-Function---------------->
+
+    <?php
+
+    //Import PHPMailer classes into the global namespace
+//These must be at the top of your script, not inside a function
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $tel = $_POST['tel'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+
+        //Load Composer's autoloader
+        require 'phpmailer/Exception.php';
+        require 'phpmailer/PHPMailer.php';
+        require 'phpmailer/SMTP.php';
+
+        //Create an instance; passing `true` enables exceptions
+        $mail = new PHPMailer(true);
+
+        try {
+            //Server settings
+            $mail->isSMTP();                                            //Send using SMTP
+            $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
+            $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+            $mail->Username = 'mail@ewastecpcb.com';                     //SMTP username
+            $mail->Password = 'icow abzh mwwa nwrg';                               //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+            $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+            //Recipients
+            $mail->setFrom('mail@ewastecpcb.com', 'Mailer');
+            $mail->addAddress('mail@ewastecpcb.com', 'Joe User');     //Add a recipient
+
+
+            //Content
+            $mail->isHTML(true);                                  //Set email format to HTML
+            $mail->Subject = 'Lead from Email Landing Page';
+            $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Subject - $subject <br> Message - $message";
+
+            $mail->send();
+            echo "<script>alert('Your Message Has Been Sent!'); window.location='index.php';</script>";
+        } catch (Exception $e) {
+            echo "<script>alert('Message could not be sent!'); window.location='index.php';</script>";
+        }
+
+    }
+    ?>
 
     <?php include('footer.php'); ?>

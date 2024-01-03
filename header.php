@@ -61,15 +61,6 @@
                                 <li><i class="fa fa-envelope"></i> info@bwmgroup.in</li>
                             </ul>
                         </div>
-                        <div class="header-social">
-                            <span class="label">Follow Us</span>
-                            <ul>
-                                <li><a href="https://www.facebook.com/bwmgroupin1" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="https://twitter.com/bwmgroupin"><i class="fab fa-twitter"></i> </a></li>
-                                <li><a href="https://www.instagram.com/bwmgroupin/"><i class="fab fa-instagram"></i> </a></li>
-                                <li><a href="https://www.linkedin.com/company/bwmgroupin"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
