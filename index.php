@@ -11,7 +11,7 @@
                 <div class="hero-images">
                     <img class="shape-1" src="assets/images/hero-shape1.png" alt="">
                     <div class="images">
-                        <img src="assets/images/hero-img-electronic-recycling-bwm-recycle.png" alt="">
+                        <img src="assets/images/hero-img-2.png" alt="">
                     </div>
                 </div>
                 <!-- Hero Image ennd -->
