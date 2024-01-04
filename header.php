@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.png">
 
     <!-- CSS
-	============================================ -->
+    ============================================ -->
 
     <!-- Icon Font CSS -->
     <link rel="stylesheet" href="assets/css/plugins/all.min.css">
@@ -26,6 +26,10 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FCFYPTH559"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-FCFYPTH559'); </script>
 
 
     <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
@@ -120,7 +124,8 @@
                     <a href="index.html"><img src="assets/images/logo/Mainlogo.png" alt=""></a>
                 </div>
                 <!-- Offcanvas Logo End -->
-                <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
+                <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i
+                        class="flaticon-close"></i></button>
             </div>
 
             <!-- Offcanvas Body Start -->
