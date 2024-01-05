@@ -96,7 +96,7 @@
                                 <!-- Contact Form Start -->
                                 <div class="contact-form">
                                     <div class="contact-form-wrap">
-                                        <form action="e-waste-thank-you.php" method="POST">
+                                        <form action="" method="POST">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
@@ -601,7 +601,7 @@
                                     <span class="sub-title">BOOK A FREE CONSULTATION</span>
                                     <h3 class="title">Get the Best Quote for E-Waste</h3>
                                 </div>
-                                <form action="e-waste-thank-you.php" method="POST">
+                                <form action="" method="POST">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
@@ -660,60 +660,60 @@
     <!-- Contact End -->
 
 
+<!-- Mail Function Start -->
+<?php
 
-    <!--------- Mail-Function---------------->
-
-    <?php
-
-    //Import PHPMailer classes into the global namespace
+//Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\SMTP;
-    use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-    if (isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $tel = $_POST['tel'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-
-        //Load Composer's autoloader
-        require 'phpmailer/Exception.php';
-        require 'phpmailer/PHPMailer.php';
-        require 'phpmailer/SMTP.php';
-
-        //Create an instance; passing `true` enables exceptions
-        $mail = new PHPMailer(true);
-
-        try {
-            //Server settings
-            $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host = 'smtp.gmail.com';                     //Set the SMTP server to send through
-            $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-            $mail->Username = 'mail@ewastecpcb.com';                     //SMTP username
-            $mail->Password = 'icow abzh mwwa nwrg';                               //SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-            //Recipients
-            $mail->setFrom('mail@ewastecpcb.com', 'Mailer');
-            $mail->addAddress('mail@ewastecpcb.com', 'Joe User');     //Add a recipient
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
 
 
-            //Content
-            $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Lead from Email Landing Page';
-            $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Subject - $subject <br> Message - $message";
+    //Load Composer's autoloader
+    require 'phpmailer/Exception.php';
+    require 'phpmailer/PHPMailer.php';
+    require 'phpmailer/SMTP.php';
 
-            $mail->send();
-            echo "<script>alert('Your Message Has Been Sent!'); window.location='index.php';</script>";
-        } catch (Exception $e) {
-            echo "<script>alert('Message could not be sent!'); window.location='index.php';</script>";
-        }
+    //Create an instance; passing `true` enables exceptions
+    $mail = new PHPMailer(true);
 
+    try {
+        //Server settings
+        $mail->isSMTP(); //Send using SMTP
+        $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
+        $mail->SMTPAuth = true; //Enable SMTP authentication
+        $mail->Username = 'developer.creativemarque@gmail.com'; //SMTP username
+        $mail->Password = 'wesw uels lzar wcxp'; //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
+        $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        //Recipients
+        $mail->setFrom('developer.creativemarque@gmail.com', 'Mailer');
+        $mail->addAddress('developer.creativemarque@gmail.com', 'Landing Page'); //Add a recipient
+
+
+        //Content
+        $mail->isHTML(true); //Set email format to HTML
+        $mail->Subject = 'Lead from Recycle Email Landing Page';
+        $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> location - $subject <br> Message - $message";
+
+        $mail->send();
+        echo "<script>alert('Your Message Has Been Sent!'); window.location='e-waste-thank-you.php';</script>";
+    } catch (Exception $e) {
+        echo "<script>alert('Message could not be sent!'); window.location='e-waste-thank-you.php';</script>";
     }
-    ?>
+
+}
+?>
+
+<!-- Mail Function End -->
 
     <?php include('footer.php'); ?>
