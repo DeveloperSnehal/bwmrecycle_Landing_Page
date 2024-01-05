@@ -690,20 +690,20 @@ if (isset($_POST['submit'])) {
         $mail->isSMTP(); //Send using SMTP
         $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
         $mail->SMTPAuth = true; //Enable SMTP authentication
-        $mail->Username = 'developer.creativemarque@gmail.com'; //SMTP username
-        $mail->Password = 'wesw uels lzar wcxp'; //SMTP password
+        $mail->Username = 'marketing.bwmg@gmail.com'; //SMTP username
+        $mail->Password = 'pwzk rlcg nzgo vrju'; //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
         $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('developer.creativemarque@gmail.com', 'Mailer');
-        $mail->addAddress('developer.creativemarque@gmail.com', 'Landing Page'); //Add a recipient
+        $mail->setFrom('marketing.bwmg@gmail.com', 'Mailer');
+        $mail->addAddress('marketing.bwmg@gmail.com', 'Landing Page'); //Add a recipient
 
 
         //Content
         $mail->isHTML(true); //Set email format to HTML
         $mail->Subject = 'Lead from Recycle Email Landing Page';
-        $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> location - $subject <br> Message - $message";
+        $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Subject - $subject <br> Message - $message";
 
         $mail->send();
         echo "<script>alert('Your Message Has Been Sent!'); window.location='e-waste-thank-you.php';</script>";
