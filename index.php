@@ -702,7 +702,7 @@ if (isset($_POST['submit'])) {
 
         //Content
         $mail->isHTML(true); //Set email format to HTML
-        $mail->Subject = 'Lead from Recycle Email Landing Page';
+        $mail->Subject = 'Lead from Recycle Google Ads Landing Page';
         $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Subject - $subject <br> Message - $message";
 
         $mail->send();
