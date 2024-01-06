@@ -96,7 +96,7 @@
                                 <!-- Contact Form Start -->
                                 <div class="contact-form">
                                     <div class="contact-form-wrap">
-                                        <form action="" method="POST">
+                                        <form action="e-waste-thank-you.php" method="POST">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
@@ -601,7 +601,7 @@
                                     <span class="sub-title">BOOK A FREE CONSULTATION</span>
                                     <h3 class="title">Get the Best Quote for E-Waste</h3>
                                 </div>
-                                <form action="" method="POST">
+                                <form action="e-waste-thank-you.php" method="POST">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
