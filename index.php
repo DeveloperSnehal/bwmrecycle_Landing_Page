@@ -122,7 +122,7 @@
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
-                                                        <input type="text" name="subject" placeholder="Company Name *">
+                                                        <input type="text" name="Company_Name" placeholder="Company Name *">
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
@@ -627,7 +627,7 @@
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" name="subject" placeholder="Company Name *">
+                                                <input type="text" name="Company_Name" placeholder="Company Name *">
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
@@ -673,7 +673,7 @@ if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $tel = $_POST['tel'];
-    $subject = $_POST['subject'];
+    $Company_Name = $_POST['Company_Name'];
     $message = $_POST['message'];
 
 
@@ -703,7 +703,7 @@ if (isset($_POST['submit'])) {
         //Content
         $mail->isHTML(true); //Set email format to HTML
         $mail->Subject = 'Lead from Recycle Google Ads Landing Page';
-        $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Subject - $subject <br> Message - $message";
+        $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Company_Name - $Company_Name <br> Message - $message";
 
         $mail->send();
         echo "";
