@@ -101,28 +101,28 @@
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
-                                                        <input type="text" name="name" placeholder="Name *">
+                                                        <input type="text" name="name" placeholder="Full Name *">
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
-                                                        <input type="email" name="email" placeholder="Email *">
+                                                        <input type="email" name="email" placeholder="Company Email *">
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
-                                                        <input type="text" name="tel" placeholder="Phone *">
+                                                        <input type="text" name="tel" placeholder="Contact Number *">
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
-                                                        <input type="text" name="subject" placeholder="Subject *">
+                                                        <input type="text" name="subject" placeholder="Company Name *">
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
@@ -130,7 +130,7 @@
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
                                                         <textarea name="message"
-                                                            placeholder="Write A Message"></textarea>
+                                                            placeholder="Short Description of Electronic Waste"></textarea>
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
@@ -606,35 +606,35 @@
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" name="name" placeholder="Name *">
+                                                <input type="text" name="name" placeholder="Full Name *">
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="email" name="email" placeholder="Email *">
+                                                <input type="email" name="email" placeholder="Company Email *">
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" name="tel" placeholder="Phone *">
+                                                <input type="text" name="tel" placeholder="Contact Number *">
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" name="subject" placeholder="Subject *">
+                                                <input type="text" name="subject" placeholder="Company Name *">
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <textarea name="message" placeholder="Write A Message"></textarea>
+                                                <textarea name="message" placeholder="Short Description of Electronic Waste"></textarea>
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
@@ -706,7 +706,7 @@ if (isset($_POST['submit'])) {
         $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Subject - $subject <br> Message - $message";
 
         $mail->send();
-        echo "<script>alert('Your Message Has Been Sent!'); window.location='e-waste-thank-you.php';</script>";
+        echo "";
     } catch (Exception $e) {
         echo "<script>alert('Message could not be sent!'); window.location='e-waste-thank-you.php';</script>";
     }
