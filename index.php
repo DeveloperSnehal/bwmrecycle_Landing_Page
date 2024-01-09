@@ -96,7 +96,7 @@
                                 <!-- Contact Form Start -->
                                 <div class="contact-form">
                                     <div class="contact-form-wrap">
-                                        <form action="e-waste-thank-you.php" method="POST">
+                                        <form action="" method="POST">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
@@ -122,7 +122,8 @@
                                                 <div class="col-sm-6">
                                                     <!-- Single Form Start -->
                                                     <div class="single-form">
-                                                        <input type="text" name="Company_Name" placeholder="Company Name *">
+                                                        <input type="text" name="Company_Name"
+                                                            placeholder="Company Name *">
                                                     </div>
                                                     <!-- Single Form End -->
                                                 </div>
@@ -601,7 +602,7 @@
                                     <span class="sub-title">BOOK A FREE CONSULTATION</span>
                                     <h3 class="title">Get the Best Quote for E-Waste</h3>
                                 </div>
-                                <form action="e-waste-thank-you.php" method="POST">
+                                <form action="" method="POST">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <!-- Single Form Start -->
@@ -627,14 +628,15 @@
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <input type="text" name="Company_Name" placeholder="Company Name *">
+                                                <input type="text" name="CompanyName" placeholder="Company Name *">
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
                                         <div class="col-sm-12">
                                             <!-- Single Form Start -->
                                             <div class="single-form">
-                                                <textarea name="message" placeholder="Short Description of Electronic Waste"></textarea>
+                                                <textarea name="message"
+                                                    placeholder="Short Description of Electronic Waste"></textarea>
                                             </div>
                                             <!-- Single Form End -->
                                         </div>
@@ -660,60 +662,60 @@
     <!-- Contact End -->
 
 
-<!-- Mail Function Start -->
-<?php
+    <!-- Mail Function Start -->
+    <?php
 
-//Import PHPMailer classes into the global namespace
+    //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
 
-if (isset($_POST['submit'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $tel = $_POST['tel'];
-    $Company_Name = $_POST['Company_Name'];
-    $message = $_POST['message'];
-
-
-    //Load Composer's autoloader
-    require 'phpmailer/Exception.php';
-    require 'phpmailer/PHPMailer.php';
-    require 'phpmailer/SMTP.php';
-
-    //Create an instance; passing `true` enables exceptions
-    $mail = new PHPMailer(true);
-
-    try {
-        //Server settings
-        $mail->isSMTP(); //Send using SMTP
-        $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
-        $mail->SMTPAuth = true; //Enable SMTP authentication
-        $mail->Username = 'marketing.bwmg@gmail.com'; //SMTP username
-        $mail->Password = 'pwzk rlcg nzgo vrju'; //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
-        $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-        //Recipients
-        $mail->setFrom('marketing.bwmg@gmail.com', 'Mailer');
-        $mail->addAddress('marketing.bwmg@gmail.com', 'Landing Page'); //Add a recipient
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $tel = $_POST['tel'];
+        $CompanyName = $_POST['CompanyName'];
+        $message = $_POST['message'];
 
 
-        //Content
-        $mail->isHTML(true); //Set email format to HTML
-        $mail->Subject = 'Lead from Recycle Google Ads Landing Page';
-        $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Company_Name - $Company_Name <br> Message - $message";
+        //Load Composer's autoloader
+        require 'phpmailer/Exception.php';
+        require 'phpmailer/PHPMailer.php';
+        require 'phpmailer/SMTP.php';
 
-        $mail->send();
-        echo "";
-    } catch (Exception $e) {
-        echo "<script>alert('Message could not be sent!'); window.location='e-waste-thank-you.php';</script>";
+        //Create an instance; passing `true` enables exceptions
+        $mail = new PHPMailer(true);
+
+        try {
+            //Server settings
+            $mail->isSMTP(); //Send using SMTP
+            $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
+            $mail->SMTPAuth = true; //Enable SMTP authentication
+            $mail->Username = 'marketing.bwmg@gmail.com'; //SMTP username
+            $mail->Password = 'pwzk rlcg nzgo vrju'; //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
+            $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+            //Recipients
+            $mail->setFrom('marketing.bwmg@gmail.com', 'Mailer');
+            $mail->addAddress('marketing.bwmg@gmail.com', 'BWMGroup'); //Add a recipient
+
+
+            //Content
+            $mail->isHTML(true); //Set email format to HTML
+            $mail->Subject = 'Contact From BWM Site';
+            $mail->Body = "Sender Name - $name <br> Sender Email - $email <br> Sender Phone No - $tel <br> Company Name - $CompanyName <br> Message - $message";
+
+            $mail->send();
+            echo "<script>window.location='e-waste-thank-you.php';</script>";
+        } catch (Exception $e) {
+            echo "<script>alert('Message could not be sent!'); window.location='e-waste-thank-you.php';</script>";
+        }
+
     }
+    ?>
 
-}
-?>
-
-<!-- Mail Function End -->
+    <!-- Mail Function End -->
 
     <?php include('footer.php'); ?>
